@@ -5,6 +5,8 @@
  * Date: 18/03/2016
  * Time: 18:28
  */
+ 
+ /* READ THE FILE "test" IN THE ROOT FOLDER AND PARSE IT TO READ EVERY ACCOUNTS */
 
 
 require "classes/includes.php";
