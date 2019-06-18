@@ -9,13 +9,14 @@ class AmazonChecker(scrapy.Spider):
 
     def parse(self, response):
         if not self.username or not self.password:
-            print ('pas bon')
+            print('pas bon')
         else:
             return scrapy.FormRequest.from_response(
-                    response,
-                    formdata={'username': self.username, 'password': self.password},
-                    callback=self.after_login
-                    )
+                response,
+                formdata={'username': self.username,
+                          'password': self.password},
+                callback=self.after_login
+            )
 
     def after_login(self, response):
-        print (response.body)
+        print(response.body)
